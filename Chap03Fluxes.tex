@@ -202,14 +202,13 @@ Freshwater re-enters the ocean via precipitation and rivers.  The precipitation 
 The net pattern of evaporation minus precipitation generally says that moisture is removed from the oceans in a band from approximately 5 degrees to 35 degrees, and in the net, precipitates near the equator and north of 40 degrees.  As with heat, this necessitates a transport of freshwater from places of excess precipitation to places of excess evaporation if the ocean is to stay in approximate steady state (\fref{fig:Schmitt18Fig5}).   
 
 
-\chapter{Fluxes and transports in the ocean}
-\label{ch:fluxestransports}
+\section{Fluxes and transports in the ocean}
+\label{sec:fluxestransports}
 
-We saw in the previous chapter that heat and freshwater can enter and leave the ocean at the surface.  We also \emph{inferred} that it must be transported from sources to sinks at the surface if the ocean is believed to be in a quasi-steady state.  We call this an \emph{inverse estimate} because we infer the inner workings of the ocean from its external forcing.  In this chapter we start grappling with \emph{how} that transport takes place, and how we might quantify and measure it.  There are actually \emph{many} processes involved in the transport of heat from the equator poleward, and trying to understand them all is one of  the main challenges of oceanography.  Given that, this chapter only gives some tools to start understanding fluxes and transports, and as such uses some simple examples.  
+We saw in the previous section that heat and freshwater can enter and leave the ocean at the surface.  We also \emph{inferred} that it must be transported from sources to sinks at the surface if the ocean is believed to be in a quasi-steady state.  We call this an \emph{inverse estimate} because we infer the inner workings of the ocean from its external forcing.  In this chapter we start grappling with \emph{how} that transport takes place, and how we might quantify and measure it.  There are actually \emph{many} processes involved in the transport of heat from the equator poleward, and trying to understand them all is one of  the main challenges of oceanography.  Given that, this chapter only gives some tools to start understanding fluxes and transports, and as such uses some simple examples.  
 
 Note that temperature, (or heat), for instance, can change at a location away from the surface in two possible ways.  Currents can bring water with a different temperature from somewhere else; we call this an \emph{advective flux}.    Conversely the water can exchange heat via mixing, both at the large scale (stirring) and ultimately at the small scale (molecular diffusion).  We call this a \emph{diffusive flux}.  
 
-\section{Advective fluxes and transport}
 \subsection{Advective flux} 
 
 \begin{marginfigure}
@@ -490,6 +489,72 @@ A second common instability is \emph{convective instability}.  This happens when
 The effect of turbulence is to greatly increase the rate at which properties are fluxed across interfaces.  However the flux still tends to be from regions of high concentration to regions of low concentration.  Hence we will often represent these fluxes by a linear flux law.  For instance, in the x-direction: $F_x = -K \frac{dC}{dx}$ where now $K$ is a \emph{turbulent diffusivity} rather than a molecular one.  When estimated, turbulent diffusivities are \emph{much} larger than molecular diffusivities.  Estimates in the open ocean range from molecular levels to $K\sim 10^{-1}\ \mathrm{m^2s^{-1}}$ and levels can reach even higher values in coastal waters where there are strong flows.  Estimating turbulence requires sophisticated instrumentation and often simplifying models, and remains a great challenge today to oceanographers.  Often the approach to estimating turbulence is to relate the turbulence to external parameters that can be measured or simulated.  This has lead to many schemes to estimate turbulence in models and ocean calculations.  
 
 The consequence of turbulent mixing is that it makes the importance of mixing much more apparent.  If the timescale is $10^{11}\ \mathrm{s}$ for molecular diffusion at $K=10^{-7}\ \mathrm{m^2\,s^{-1}}$, then it is $10^{7}\ \mathrm{s}$ for $K=10^{-3}\ \mathrm{m^2\,s^{-1}}$, or 100 days.  That starts to matter for long-lasting flows.  
+
+\section{Exercises}
+
+\paragraph{Heat budget of the surface mixed layer}
+
+\includegraphics[width=2.5in]{figs/FluxesFigs/HotsT}
+
+\begin{itemize}
+    \item What is the specific heat capacity of water?
+    \item Sketch what the temperature profile below would look like if it lost enough heat so that it was a uniform temperature to 100 m?
+\item How much heat would have to be lost from the surface of the ocean for this to happen? Estimate from the temperature profile and show how you calculated this.
+\item What is the average heat flux this heat loss would represent if it occurred over 6 months, in $W/m^2$. Based on the plots in the reading is this a reasonable net surface heat flux?
+\end{itemize}
+
+\paragraph{Interpret the evolution of the surface mixed layer}
+
+Based on the following plot, try and answer the following questions:
+
+\includegraphics[width=3in]{figs/FluxesFigs/MixedLayerPapa}
+
+From Emery et. al. 2007
+
+\begin{itemize}
+  \item Why does the mixed layer deepen in the winter?
+
+  \item Why does it shoal in the spring and summer?
+
+  \item Why do you think there is often a spring bloom at Station Papa? Why does it stop?
+\end{itemize}
+
+
+
+\paragraph{Diffusive fluxes}
+
+The geometry and units of fluxes are a bit difficult to get clear, so lets practice them here. Consider the following table of data points:
+
+\begin{tabular}{l|c}
+Depth [m]  & Concentration Sulfur $g\, m^{-3}$\\
+  \hline
+5	& 2\\
+15	& 3\\
+25	& 6\\
+35	& 6\\
+45	& 4\\
+55	& 2\\
+\end{tabular}
+
+\begin{itemize}
+    \item Sketch the profile of Sulfur with depth.
+
+    \item Doing this sort of thing abstractly becomes hard. Lets assume this profile was collected in a column of water that is 65-m high, 1 meter wide and 1 meter deep. Divide the column into 10 x 1 x 1 $m^3$ blocks centered on our measurements. Approximately, how many grams of Sulfur are there in each of the 6 blocks?
+    \item Approximate the gradient of Sulfur concentration at each the boundaries of each of the boxes (i.e. 10 m, 20 m, etc..).
+
+\item If the turbulent diffusivity is $K=10^{-3} m/s$
+ what is the diffusive transport across each of the block faces? Make sure you get the direction correct. Report your result in grams/second.
+
+\item Consider any one block. You now should know the value and direction of flux (in g/s) across the upper and lower face, and you should know the total grams inside the block. If you assume the flux remains constant for 1000 s, how many grams of Sulfur are in your cell after 1000 s?
+
+\item Repeat for all 6 cells (hint, use a computer!) and plot the new sulfur profile after a 1000 s.
+
+\item Repeat the procedure 9 more times to get the gradient after 10000 s; (Hint: really use a computer;). Plot the sulfur profile at each timestep.
+
+\item Do the changes of the profile correspond to your intuition of how diffusion works?
+\end{itemize}
+
+
 
 %%% Local Variables:
 %%% mode: latex
