@@ -14,14 +14,23 @@ Like an estuary, if the ocean only had heating and cooling at the surface the to
 
 Most heat exchange in the ocean occurs at the surface, with short wave radiation passing through the atmosphere and impacting the ocean, and then the ocean losing heat to back radiation, latent heat flux, and heating and cooling from direct contact with the atmosphere.
 
+\begin{figure}[hbt]
+  \begin{center}
+    \includegraphics{figs/FluxesFigs/382_2014_2430_Fig2_HTML}
+    \caption{Heat fluxes over land and ocean, units of $\mathrm{W\,m^{-2}}$.  Note the net ``thermal'', or longwave back radiation is $H_{LW} = 53\ \mathrm{W\,m^{-2}}$ \citep{wildetal15}.  ``Solar absorbed'' is the same as $H_{SW}$ below, and ``evaporation'' is the same as $H_{latent}$.  Note the error bounds next to each estimate.  The estimated net imbalance is the warming of the oceans due to global warming.  }
+    \label{fig:382_2014_2430_Fig2_HTML}  
+  \end{center}
+\end{figure}
 
-An estimate of the net heat flux in the ocean is given in \fref{fig:SurfaceHeatFluxes}e.  Recall that heat is specified in units of Joules, where 1 Joule is the energy (or heat) required to warm a kilogram of water one degree Kelvin.  Heat fluxes are a rate of heating, and hence are in units of Watts, or Joules per second.  If we want to make a map like \fref{fig:SurfaceHeatFluxes}e, then we want to know the rate of heating per area, and we plot in units of Watts per meter squared, or $\mathrm{W\,m^{-2}}$.  One thing to keep in mind when looking at figures like \fref{fig:SurfaceHeatFluxes} is that this is a projection of a sphere, and that the polar regions have much less area than the equatorial ones.  
+An estimate of the net heat flux in the ocean is given in \fref{fig:382_2014_2430_Fig2_HTML} and spatially in \fref{fig:SurfaceHeatFluxes}e.  Recall that heat is specified in units of Joules, where 1 Joule is the energy (or heat) required to warm a kilogram of water one degree Kelvin.  Heat fluxes are a rate of heating, and hence are in units of Watts, or Joules per second.  If we want to make a map like \fref{fig:SurfaceHeatFluxes}e, then we want to know the rate of heating per area, and we plot in units of Watts per meter squared, or $\mathrm{W\,m^{-2}}$.  The average over the surface area of the ocean is shown in \fref{fig:382_2014_2430_Fig2_HTML}.  
+
+Overall, there is a net input from shortwave radiation of about $H_{SW} = 170\ \marthrm{W\,m^{-2}}$ once sunlight penetrates the cloud cover (\fref{fig:382_2014_2430_Fig2_HTML}). There is a net longwave radiation of $H_{LW}=53\ \mathrm{W\, m^{-2}}$ just due to the temperature of the water and the temperature of the atmosphere and clouds above.  The remaining two terms are ``sensible'' heat loss, which is just due to the temperature difference diffusing across the sea surface ($H_{sensible}=16\ \mathrm{W\, m^{-2}}$), and the ``latent'' heat loss due to evaporation, which is the largest loss ($H_{latent}=100\ \mathrm{W\, m^{2}}$).  
+
+Note that the estimate in \fref{fig:382_2014_2430_Fig2_HTML} has a net warming of $0.8\ \mathrm{W\,m^{-2}}$, which is due to global warming.  We can consider the average heating for a $D=4000$-m deep ocean using this number.  The heat capacity of water is $c_p=4.2\times10^{3}J\,kg^{-1},K^{-1}$, and the density $1030\ \mathrm{kg\,m^{-3}}$, so the rate of temperature change is $dT/dt = H_{net} / (D \rho c_p) = 0.0015\ \mathrm{K/y}$, or greater than 600 years to increase by 1 degree at the current rate.  This of course does not mean climate change is not important to the ocean - much of this change is confined to the upper few hundred meters, and climate change strongly affects winds that drive much of the ocean circulation.  
 
 \subsection{Incoming shortwave radiation}
 
 The spatial distribution of these fluxes and their net magnitudes indicate that, unsurprisingly, the net incoming shortwave radiation is strongest at the equator (\fref{fig:SurfaceHeatFluxes}a).  This radiation comes from the sun, and is modified as it passes through the atmosphere.  Of course it includes all wavelengths of radiation, but it is very much dominated by short scale radiation, so it is called "shortwave".  
-
-Estimating the radiation coming from the sun and impacting the ocean would be a simple matter depending only on the tilt of the earth, and to a (much) lesser extent whether the sun is in aphelion or perihelion.  However, the atmosphere severely modifies the net flux reaching the earth, due to ozone and clouds.  Indeed, much of the east-west spatial variability to the shortwave surface fluxes is due to clouds. For instance, the inter-tropical convergence zone can be clearly seen just north of the equator (\fref{fig:SurfaceHeatFluxes}a) as a region of reduced incoming radiation.  
 
 \begin{figure}[htb]
   \centering
@@ -31,9 +40,12 @@ Estimating the radiation coming from the sun and impacting the ocean would be a 
   \label{fig:SurfaceHeatFluxes}
 \end{figure}
 
+Estimating the radiation coming from the sun and impacting the ocean would be a simple matter depending only on the tilt of the earth, and to a (much) lesser extent whether the sun is in aphelion or perihelion.  However, the atmosphere severely modifies the net flux reaching the earth, due to ozone and clouds.  Indeed, much of the east-west spatial variability to the shortwave surface fluxes is due to clouds. For instance, the inter-tropical convergence zone can be clearly seen just north of the equator (\fref{fig:SurfaceHeatFluxes}a) as a region of reduced incoming radiation.  
+
+
 Given this, it is important to realize that it is very difficult to make accurate estimates of the incoming radiation over the full expanse of the ocean.  Satellites make this easier, because they give a good idea of cloud cover, but the thickness of the clouds and their humidity all matter to making an estimate.  Radiation can be measured with \href{https://en.wikipedia.org/wiki/Radiometer}{radiometers}, but these need ships, moorings, or other platforms to make direct measurements. Hence estimates of shortwave radiation are derived from empirical models.  
 
-Some idea of the magnitude of the problem can be seen by considering the net heat flux of 1.2 PW (\fref{fig:SurfaceHeatFluxes}e) integrated over the entire global ocean (1 PW is $10^{15}\ \mathrm{Watts}$). The volume of the oceans is approximately $1.335\times10^{18}\ \mathrm{m^3}$. The heat capacity of water is $4180 \mathrm{J\, kg^{-1}}$ and its density approximately $1030 \ \mathrm{kg\,m^{-3}}$.  Using these numbers, this 1.2 PW discrepency in the annual mean would lead to a one-degree warming of the ocean over 140 years.  This would be quite large and rapid, even on the scale of anthropogenic climate change, and this net should be considered a bound on how accurate the various terms of the budget are, rather than a direct estimate of how fast the ocean is warming.  
+Some idea of the magnitude of the problem can be seen by considering the net heat flux of 1.2 PW (\fref{fig:SurfaceHeatFluxes}e) integrated over the entire global ocean (1 PW is $10^{15}\ \mathrm{Watts}$). The volume of the oceans is approximately $1.335\times10^{18}\ \mathrm{m^3}$. The heat capacity of water is $4180 \mathrm{J\, kg^{-1}}$ and its density approximately $1030 \ \mathrm{kg\,m^{-3}}$.  Using these numbers, this 1.2 PW discrepancy in the annual mean would lead to a one-degree warming of the ocean over 140 years.  This would be quite large and rapid, even on the scale of anthropogenic climate change, and this net should be considered a bound on how accurate the various terms of the budget are, rather than a direct estimate of how fast the ocean is warming.  
 
 \begin{figure}[htb]
   \centering

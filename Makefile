@@ -14,7 +14,7 @@ Eos314.pdf: $(texs) Eos314.tex
 	pdflatex --interaction nonstopmode -file-line-error --output-directory=.texpadtmp  Eos314
 	cp .texpadtmp/Eos314Out.pdf ./Eos314.pdf
 
-Chapters = Chap01Estuaries.pdf  Chap02Eos.pdf  Chap03Fluxes.pdf  Chap04Masses.pdf  Chap05Thermohaline.pdf  Chap06Waves.pdf  Chap07Tides.pdf Chap08WindDriven.pdf Chap09Coriolis.pdf Chap10Coriolis.pdf
+Chapters = Chap01Estuaries.pdf  Chap02Eos.pdf  Chap03Fluxes.pdf  Chap04Masses.pdf  Chap05Thermohaline.pdf  Chap06Waves.pdf  Chap07Tides.pdf Chap08WindDriven.pdf Chap09Coriolis.pdf Chap10Geostrophic.pdf
 
 pdfs: $(Chapters)
 
